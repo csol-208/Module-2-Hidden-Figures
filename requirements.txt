@@ -1,0 +1,14 @@
+ibis-framework[duckdb,geospatial]
+duckdb==1.4.4
+altair
+pandas
+jupyter
+anymap
+geopandas
+rasterio
+rioxarray
+pooch
+shapely
+xarray
+matplotlib
+sqlglot<26

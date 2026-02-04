@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Conda
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE (keep vscode settings)
+.idea/
+!.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large ones)
+*.parquet
+*.xlsx
+data/*.csv
+!data/.gitkeep
+
+# Outputs (regenerable)
+outputs/*.html
+outputs/*.png
+outputs/*.pdf
+!outputs/.gitkeep
