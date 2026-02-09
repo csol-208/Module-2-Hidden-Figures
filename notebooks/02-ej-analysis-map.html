@@ -1006,10 +1006,18 @@
   "height": "100vh",
   "style": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
   "_layers": {
+    "OpenStreetMap.Mapnik": {
+      "id": "OpenStreetMap.Mapnik",
+      "type": "raster",
+      "source": "OpenStreetMap.Mapnik_source",
+      "paint": {
+        "raster-opacity": 1.0
+      }
+    },
     "svi-fill": {
       "id": "svi-fill",
       "source": "svi",
-      "source-layer": "svi2020_us_tract",
+      "source-layer": "SVI2000_US_tract",
       "type": "fill",
       "paint": {
         "fill-color": [
@@ -1040,7 +1048,7 @@
     "holc-fill": {
       "id": "holc-fill",
       "source": "holc",
-      "source-layer": "mappinginequality",
+      "source-layer": "redlining",
       "type": "fill",
       "paint": {
         "fill-color": [
@@ -1076,6 +1084,13 @@
     }
   },
   "_sources": {
+    "OpenStreetMap.Mapnik_source": {
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256
+    },
     "svi_source": {
       "type": "vector",
       "url": "pmtiles://https://s3-west.nrp-nautilus.io/public-social-vulnerability/svi2020_us_tract.pmtiles",
@@ -9319,6 +9334,12 @@
             "opacity": 1.0,
             "name": "Background"
           },
+          "OpenStreetMap.Mapnik": {
+            "visible": true,
+            "opacity": 1.0,
+            "name": "OpenStreetMap.Mapnik",
+            "type": "raster"
+          },
           "svi-fill": {
             "visible": true,
             "opacity": 1.0,
@@ -9403,6 +9424,12 @@
               "opacity": 1.0,
               "name": "Background"
             },
+            "OpenStreetMap.Mapnik": {
+              "visible": true,
+              "opacity": 1.0,
+              "name": "OpenStreetMap.Mapnik",
+              "type": "raster"
+            },
             "svi-fill": {
               "visible": true,
               "opacity": 1.0,
@@ -9430,6 +9457,57 @@
       "id": 5,
       "method": "addSource",
       "args": [
+        "OpenStreetMap.Mapnik_source",
+        {
+          "type": "raster",
+          "tiles": [
+            "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          ],
+          "tileSize": 256
+        }
+      ],
+      "kwargs": {}
+    },
+    {
+      "id": 6,
+      "method": "addLayer",
+      "args": [
+        {
+          "id": "OpenStreetMap.Mapnik",
+          "type": "raster",
+          "source": "OpenStreetMap.Mapnik_source",
+          "paint": {
+            "raster-opacity": 1.0
+          }
+        },
+        null
+      ],
+      "kwargs": {}
+    },
+    {
+      "id": 7,
+      "method": "setLayoutProperty",
+      "args": [
+        "OpenStreetMap.Mapnik",
+        "visibility",
+        "visible"
+      ],
+      "kwargs": {}
+    },
+    {
+      "id": 8,
+      "method": "setPaintProperty",
+      "args": [
+        "OpenStreetMap.Mapnik",
+        "raster-opacity",
+        1.0
+      ],
+      "kwargs": {}
+    },
+    {
+      "id": 9,
+      "method": "addSource",
+      "args": [
         "svi_source",
         {
           "type": "vector",
@@ -9440,13 +9518,13 @@
       "kwargs": {}
     },
     {
-      "id": 6,
+      "id": 10,
       "method": "addLayer",
       "args": [
         {
           "id": "svi-fill",
           "source": "svi",
-          "source-layer": "svi2020_us_tract",
+          "source-layer": "SVI2000_US_tract",
           "type": "fill",
           "paint": {
             "fill-color": [
@@ -9479,7 +9557,7 @@
       "kwargs": {}
     },
     {
-      "id": 7,
+      "id": 11,
       "method": "setLayoutProperty",
       "args": [
         "svi-fill",
@@ -9489,7 +9567,7 @@
       "kwargs": {}
     },
     {
-      "id": 8,
+      "id": 12,
       "method": "setPaintProperty",
       "args": [
         "svi-fill",
@@ -9499,7 +9577,7 @@
       "kwargs": {}
     },
     {
-      "id": 9,
+      "id": 13,
       "method": "addSource",
       "args": [
         "holc_source",
@@ -9512,13 +9590,13 @@
       "kwargs": {}
     },
     {
-      "id": 10,
+      "id": 14,
       "method": "addLayer",
       "args": [
         {
           "id": "holc-fill",
           "source": "holc",
-          "source-layer": "mappinginequality",
+          "source-layer": "redlining",
           "type": "fill",
           "paint": {
             "fill-color": [
@@ -9545,7 +9623,7 @@
       "kwargs": {}
     },
     {
-      "id": 11,
+      "id": 15,
       "method": "setLayoutProperty",
       "args": [
         "holc-fill",
@@ -9555,7 +9633,7 @@
       "kwargs": {}
     },
     {
-      "id": 12,
+      "id": 16,
       "method": "setPaintProperty",
       "args": [
         "holc-fill",
@@ -9565,7 +9643,7 @@
       "kwargs": {}
     },
     {
-      "id": 13,
+      "id": 17,
       "method": "addSource",
       "args": [
         "data_centers_source",
@@ -17763,7 +17841,7 @@
       "kwargs": {}
     },
     {
-      "id": 14,
+      "id": 18,
       "method": "addLayer",
       "args": [
         {
@@ -17783,7 +17861,7 @@
       "kwargs": {}
     },
     {
-      "id": 15,
+      "id": 19,
       "method": "setLayoutProperty",
       "args": [
         "data_centers",
@@ -17793,7 +17871,7 @@
       "kwargs": {}
     },
     {
-      "id": 16,
+      "id": 20,
       "method": "setPaintProperty",
       "args": [
         "data_centers",
@@ -17803,7 +17881,7 @@
       "kwargs": {}
     },
     {
-      "id": 17,
+      "id": 21,
       "method": "fitBounds",
       "args": [
         [
