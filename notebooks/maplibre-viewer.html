@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environmental Justice Map - MapLibre</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/pmtiles@3.0.7/dist/pmtiles.js"></script>
+    <script src="https://unpkg.com/protomaps-leaflet@4.0.0/dist/protomaps-leaflet.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            font-family: Arial, sans-serif;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h3 style="margin: 0 0 10px 0;">Environmental Justice Analysis</h3>
+        <div style="font-size: 12px;">
+            <div><span style="background: #08519c; padding: 2px 8px; color: white;">■</span> High Vulnerability (SVI)</div>
+            <div><span style="background: #2ECC71; padding: 2px 8px; color: white;">■</span> Grade A (Best)</div>
+            <div><span style="background: #F1C40F; padding: 2px 8px;">■</span> Grade B</div>
+            <div><span style="background: #E67E22; padding: 2px 8px; color: white;">■</span> Grade C</div>
+            <div><span style="background: #E74C3C; padding: 2px 8px; color: white;">■</span> Grade D (Hazardous)</div>
+            <div><span style="background: #FF0000; padding: 2px 8px; color: white;">●</span> Data Centers</div>
+            <div style="margin-top: 10px; font-size: 11px; color: #666;">
+                <div id="status">Loading layers... Check console (F12)</div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        // Add PMTiles protocol
+        let protocol = new pmtiles.Protocol();
+        maplibregl.addProtocol("pmtiles", protocol.tile);
+
+        // Initialize map
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: {
+                version: 8,
+                sources: {
+                    'osm': {
+                        type: 'raster',
+                        tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'],
+                        tileSize: 256,
+                        attribution: '© OpenStreetMap contributors'
+                    }
+                },
+                layers: [{
+                    id: 'osm',
+                    type: 'raster',
+                    source: 'osm'
+                }]
+            },
+            center: [-98, 39],
+            zoom: 4
+        });
+
+        map.on('load', async function() {
+            // Inspect PMTiles to find the correct layer names
+            console.log('=== INSPECTING PMTILES SOURCES ===');
+            
+            const sviUrl = 'https://s3-west.nrp-nautilus.io/public-social-vulnerability/svi2020_us_tract.pmtiles';
+            
+            try {
+                // Create PMTiles instance to inspect metadata
+                const p = new pmtiles.PMTiles(sviUrl);
+                const header = await p.getHeader();
+                const metadata = await p.getMetadata();
+                
+                console.log('SVI PMTiles Header:', header);
+                console.log('SVI PMTiles Metadata:', metadata);
+                
+                if (metadata && metadata.vector_layers) {
+                    console.log('✓ SVI Vector layers found:', metadata.vector_layers);
+                    metadata.vector_layers.forEach(layer => {
+                        console.log('  - Layer name:', layer.id || layer.name);
+                    });
+                }
+            } catch (e) {
+                console.log('Could not read PMTiles metadata:', e);
+            }
+
+            // Add SVI PMTiles source
+            map.addSource('svi', {
+                type: 'vector',
+                url: 'pmtiles://' + sviUrl,
+                minzoom: 0,
+                maxzoom: 14
+            });
+
+            // Add HOLC PMTiles source
+            map.addSource('holc', {
+                type: 'vector',
+                url: 'pmtiles://https://s3-west.nrp-nautilus.io/public-mappinginequality/mappinginequality.pmtiles',
+                minzoom: 0,
+                maxzoom: 14
+            });
+
+            // Try adding SVI layer with multiple possible source-layer names
+            const possibleSVINames = [
+                'svi2000_us_tract',  // Correct name matching the file!
+                'SVI2000_US_tract',
+                'svi2020_us_tract',
+                'SVI2020_US_tract', 
+                'SVI2020_us_tract',
+                'svi2020_us',
+                'svi',
+                'default'
+            ];
+            
+            let sviLayerAdded = false;
+            
+            // Try each possible name
+            for (let layerName of possibleSVINames) {
+                if (sviLayerAdded) break;
+                
+                try {
+                    map.addLayer({
+                        id: 'svi-fill-' + layerName,
+                        type: 'fill',
+                        source: 'svi',
+                        'source-layer': layerName,
+                        paint: {
+                            'fill-color': [
+                                'interpolate',
+                                ['linear'],
+                                ['get', 'RPL_THEMES'],
+                                0, '#f7fbff',
+                                0.2, '#c6dbef',
+                                0.4, '#9ecae1',
+                                0.6, '#6baed6',
+                                0.8, '#3182bd',
+                                1.0, '#08519c'
+                            ],
+                            'fill-opacity': 0.7
+                        }
+                    });
+                    console.log('✓ SVI layer added with source-layer:', layerName);
+                    sviLayerAdded = true;
+                    
+                    // Wait a bit and check if features are rendered
+                    setTimeout(() => {
+                        const features = map.queryRenderedFeatures({ layers: ['svi-fill-' + layerName] });
+                        if (features.length > 0) {
+                            console.log('✓✓ SVI features ARE rendering! Count:', features.length);
+                            console.log('   Sample feature:', features[0]);
+                            document.getElementById('status').innerHTML = '✓ SVI loaded (' + features.length + ' features)';
+                            document.getElementById('status').style.color = 'green';
+                        } else {
+                            console.log('⚠ SVI layer added but no features rendering yet (might need to zoom)');
+                            document.getElementById('status').innerHTML = '⚠ SVI layer added, zoom in to see tiles';
+                            document.getElementById('status').style.color = 'orange';
+                        }
+                    }, 2000);
+                    
+                } catch (e) {
+                    console.log('✗ Failed with source-layer "' + layerName + '":', e.message);
+                }
+            }
+            
+            if (!sviLayerAdded) {
+                console.error('❌ Could not add SVI layer with any known source-layer name!');
+                document.getElementById('status').innerHTML = '❌ SVI failed to load - check console';
+                document.getElementById('status').style.color = 'red';
+            }
+
+            // Add HOLC redlining layer
+            try {
+                map.addLayer({
+                    id: 'holc-fill',
+                    type: 'fill',
+                    source: 'holc',
+                    'source-layer': 'redlining',
+                    paint: {
+                        'fill-color': [
+                            'match',
+                            ['get', 'grade'],
+                            'A', '#2ECC71',
+                            'B', '#F1C40F',
+                            'C', '#E67E22',
+                            'D', '#E74C3C',
+                            '#BDBDBD'
+                        ],
+                        'fill-opacity': 0.5
+                    }
+                });
+                console.log('✓ HOLC layer added with source-layer: redlining');
+            } catch (e) {
+                console.error('✗ Error adding HOLC layer:', e);
+            }
+
+            // Load and add data centers from local CSV
+            fetch('data/data_centers.csv')
+                .then(response => response.text())
+                .then(csv => {
+                    const lines = csv.split('\n');
+                    const headers = lines[0].split(',');
+                    const features = [];
+
+                    for (let i = 1; i < lines.length; i++) {
+                        const values = lines[i].split(',');
+                        if (values.length < 2) continue;
+                        
+                        const country = values[headers.indexOf('country')];
+                        if (country !== 'United States') continue;
+
+                        const lon = parseFloat(values[headers.indexOf('longitude')]);
+                        const lat = parseFloat(values[headers.indexOf('latitude')]);
+                        
+                        if (lon && lat) {
+                            features.push({
+                                type: 'Feature',
+                                geometry: {
+                                    type: 'Point',
+                                    coordinates: [lon, lat]
+                                },
+                                properties: {
+                                    provider: values[headers.indexOf('provider')] || '',
+                                    region: values[headers.indexOf('region_name')] || ''
+                                }
+                            });
+                        }
+                    }
+
+                    map.addSource('data-centers', {
+                        type: 'geojson',
+                        data: {
+                            type: 'FeatureCollection',
+                            features: features
+                        }
+                    });
+
+                    map.addLayer({
+                        id: 'data-centers',
+                        type: 'circle',
+                        source: 'data-centers',
+                        paint: {
+                            'circle-radius': 5,
+                            'circle-color': '#FF0000',
+                            'circle-opacity': 0.8,
+                            'circle-stroke-width': 1,
+                            'circle-stroke-color': '#FFFFFF'
+                        }
+                    });
+
+                    console.log('✓ Loaded ' + features.length + ' data centers');
+                })
+                .catch(error => console.log('✗ Error loading data centers:', error));
+
+            // Add click handler to inspect features
+            map.on('click', function(e) {
+                const features = map.queryRenderedFeatures(e.point);
+                console.log('Features at click:', features);
+                if (features.length > 0) {
+                    console.log('First feature:', features[0]);
+                }
+            });
+
+            // Add navigation controls
+            map.addControl(new maplibregl.NavigationControl());
+        });
+
+        // Log when sources are loaded and inspect their layers
+        map.on('sourcedata', function(e) {
+            if (e.isSourceLoaded) {
+                console.log('✓ Source loaded:', e.sourceId);
+                
+                // Try to get source-layer information
+                if (e.sourceId === 'svi' || e.sourceId === 'holc') {
+                    const source = map.getSource(e.sourceId);
+                    console.log('  Source details:', source);
+                    
+                    // After SVI loads, check for features
+                    if (e.sourceId === 'svi') {
+                        setTimeout(() => {
+                            const sviFeatures = map.querySourceFeatures('svi');
+                            console.log('  SVI features on map:', sviFeatures.length);
+                            if (sviFeatures.length > 0) {
+                                console.log('  Sample SVI feature:', sviFeatures[0]);
+                            } else {
+                                console.log('  ⚠ No SVI features found - try zooming in!');
+                            }
+                        }, 1000);
+                    }
+                }
+            }
+        });
+
+        map.on('render', function() {
+            // Check once when first render completes
+            if (!window.checkedLayers) {
+                window.checkedLayers = true;
+                setTimeout(() => {
+                    const layers = map.getStyle().layers;
+                    console.log('All layers in map:', layers.map(l => l.id));
+                }, 2000);
+            }
+        });
+
+        map.on('styleimagemissing', function(e) {
+            console.log('Missing image:', e.id);
+        });
+
+        map.on('error', function(e) {
+            console.error('Map error:', e);
+        });
+    </script>
+</body>
+</html>

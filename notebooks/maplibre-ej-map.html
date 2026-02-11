@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EJ Analysis - SVI & Redlining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet">
+    <script src="https://unpkg.com/pmtiles@3.0.3/dist/pmtiles.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .legend {
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            padding: 10px;
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+            z-index: 1;
+        }
+        .legend h4 {
+            margin: 0 0 10px;
+            font-size: 13px;
+        }
+        .legend div span {
+            border-radius: 50%;
+            display: inline-block;
+            height: 15px;
+            margin-right: 5px;
+            width: 15px;
+        }
+        .legend-item {
+            margin: 5px 0;
+        }
+        .gradient-bar {
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(to right, #f7fbff, #c6dbef, #9ecae1, #6baed6, #3182bd, #08519c);
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+        .gradient-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .layer-control {
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        .layer-control h4 {
+            margin: 0 0 10px;
+            font-size: 13px;
+        }
+        .layer-control label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .layer-control input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="layer-control">
+    <h4>Layer Controls</h4>
+    <label>
+        <input type="checkbox" id="toggle-holc" checked>
+        HOLC Redlining
+    </label>
+    <label>
+        <input type="checkbox" id="toggle-svi" checked>
+        Social Vulnerability
+    </label>
+    <label>
+        <input type="checkbox" id="toggle-datacenters" checked>
+        Data Centers
+    </label>
+</div>
+<div class="legend">
+    <h4>HOLC Redlining Grades</h4>
+    <div class="legend-item"><span style="background-color: #2ECC71"></span>A - Best</div>
+    <div class="legend-item"><span style="background-color: #F1C40F"></span>B - Still Desirable</div>
+    <div class="legend-item"><span style="background-color: #E67E22"></span>C - Declining</div>
+    <div class="legend-item"><span style="background-color: #E74C3C"></span>D - Hazardous</div>
+    <hr style="margin: 10px 0;">
+    <h4>Social Vulnerability (SVI)</h4>
+    <div class="gradient-bar"></div>
+    <div class="gradient-labels">
+        <span>Low (0.0)</span>
+        <span>High (1.0)</span>
+    </div>
+    <hr style="margin: 10px 0;">
+    <h4>Data Centers</h4>
+    <div class="legend-item"><span style="background-color: #FF0000; border-radius: 50%;"></span>Cloud Data Centers</div>
+</div>
+
+<script>
+    // Register PMTiles protocol
+    let protocol = new pmtiles.Protocol();
+    maplibregl.addProtocol("pmtiles", protocol.tile);
+
+    // Initialize map
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: {
+            'version': 8,
+            'sources': {
+                'osm': {
+                    'type': 'raster',
+                    'tiles': [
+                        'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png'
+                    ],
+                    'tileSize': 256,
+                    'attribution': '© OpenStreetMap contributors'
+                }
+            },
+            'layers': [{
+                'id': 'osm',
+                'type': 'raster',
+                'source': 'osm',
+                'minzoom': 0,
+                'maxzoom': 22
+            }]
+        },
+        center: [-98, 39],
+        zoom: 4
+    });
+
+    // Add navigation controls
+    map.addControl(new maplibregl.NavigationControl());
+
+    map.on('load', () => {
+        // Add SVI PMTiles source
+        map.addSource('svi', {
+            type: 'vector',
+            url: 'pmtiles://https://s3-west.nrp-nautilus.io/public-social-vulnerability/svi2020_us_tract.pmtiles',
+            attribution: 'CDC Social Vulnerability Index'
+        });
+
+        // Add SVI fill layer
+        map.addLayer({
+            'id': 'svi-fill',
+            'type': 'fill',
+            'source': 'svi',
+            'source-layer': 'SVI2000_US_tract',
+            'paint': {
+                'fill-color': [
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'RPL_THEMES'],
+                    0, '#f7fbff',
+                    0.2, '#c6dbef',
+                    0.4, '#9ecae1',
+                    0.6, '#6baed6',
+                    0.8, '#3182bd',
+                    1.0, '#08519c'
+                ],
+                'fill-opacity': 0.6
+            }
+        });
+
+        // Add Redlining PMTiles source
+        map.addSource('holc', {
+            type: 'vector',
+            url: 'pmtiles://https://s3-west.nrp-nautilus.io/public-mappinginequality/mappinginequality.pmtiles',
+            attribution: 'Mapping Inequality - HOLC'
+        });
+
+        // Add Redlining fill layer
+        map.addLayer({
+            'id': 'holc-fill',
+            'type': 'fill',
+            'source': 'holc',
+            'source-layer': 'redlining',
+            'paint': {
+                'fill-color': [
+                    'match',
+                    ['get', 'grade'],
+                    'A', '#2ECC71',
+                    'B', '#F1C40F',
+                    'C', '#E67E22',
+                    'D', '#E74C3C',
+                    '#BDBDBD'
+                ],
+                'fill-opacity': 0.5
+            }
+        });
+
+        // Add Redlining outline layer
+        map.addLayer({
+            'id': 'holc-outline',
+            'type': 'line',
+            'source': 'holc',
+            'source-layer': 'redlining',
+            'paint': {
+                'line-color': '#000000',
+                'line-width': 1,
+                'line-opacity': 0.4
+            }
+        });
+
+        // Add click interaction for both layers
+        map.on('click', 'svi-fill', (e) => {
+            const props = e.features[0].properties;
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(`
+                    <strong>Social Vulnerability Index</strong><br>
+                    Tract: ${props.FIPS || 'N/A'}<br>
+                    Overall Theme: ${props.RPL_THEMES ? props.RPL_THEMES.toFixed(3) : 'N/A'}<br>
+                    State: ${props.STATE || 'N/A'}
+                `)
+                .addTo(map);
+        });
+
+        map.on('click', 'holc-fill', (e) => {
+            const props = e.features[0].properties;
+            new maplibregl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(`
+                    <strong>HOLC Redlining</strong><br>
+                    Grade: ${props.grade || 'N/A'}<br>
+                    City: ${props.city || 'N/A'}<br>
+                    ${props.name ? `Area: ${props.name}` : ''}
+                `)
+                .addTo(map);
+        });
+
+        // Mouseover popup for HOLC grade
+        let hoverPopup = null;
+
+        map.on('mousemove', 'holc-fill', (e) => {
+            map.getCanvas().style.cursor = 'pointer';
+            
+            const props = e.features[0].properties;
+            const gradeText = props.grade || 'N/A';
+            
+            // Remove existing popup if any
+            if (hoverPopup) {
+                hoverPopup.remove();
+            }
+            
+            // Create new popup
+            hoverPopup = new maplibregl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            })
+                .setLngLat(e.lngLat)
+                .setHTML(`<strong>Grade: ${gradeText}</strong>`)
+                .addTo(map);
+        });
+
+        map.on('mouseleave', 'holc-fill', () => {
+            map.getCanvas().style.cursor = '';
+            if (hoverPopup) {
+                hoverPopup.remove();
+                hoverPopup = null;
+            }
+        });
+
+        // Change cursor on hover for SVI layer
+        map.on('mouseenter', 'svi-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'svi-fill', () => { map.getCanvas().style.cursor = ''; });
+
+        // Load and add data centers from CSV
+        fetch('data/data_centers.csv')
+            .then(response => response.text())
+            .then(csv => {
+                const lines = csv.split('\n');
+                const headers = lines[0].split(',');
+                const features = [];
+
+                for (let i = 1; i < lines.length; i++) {
+                    const values = lines[i].split(',');
+                    if (values.length < 2) continue;
+                    
+                    const country = values[headers.indexOf('country')];
+                    if (country !== 'United States') continue;
+
+                    const lon = parseFloat(values[headers.indexOf('longitude')]);
+                    const lat = parseFloat(values[headers.indexOf('latitude')]);
+                    
+                    if (lon && lat) {
+                        features.push({
+                            type: 'Feature',
+                            geometry: {
+                                type: 'Point',
+                                coordinates: [lon, lat]
+                            },
+                            properties: {
+                                provider: values[headers.indexOf('provider')] || '',
+                                region: values[headers.indexOf('region_name')] || '',
+                                metro: values[headers.indexOf('metro')] || '',
+                                type: values[headers.indexOf('type')] || ''
+                            }
+                        });
+                    }
+                }
+
+                map.addSource('data-centers', {
+                    type: 'geojson',
+                    data: {
+                        type: 'FeatureCollection',
+                        features: features
+                    }
+                });
+
+                map.addLayer({
+                    id: 'data-centers',
+                    type: 'circle',
+                    source: 'data-centers',
+                    paint: {
+                        'circle-radius': 6,
+                        'circle-color': '#FF0000',
+                        'circle-opacity': 0.8,
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': '#FFFFFF'
+                    }
+                });
+
+                // Add click handler for data centers
+                map.on('click', 'data-centers', (e) => {
+                    const props = e.features[0].properties;
+                    new maplibregl.Popup()
+                        .setLngLat(e.lngLat)
+                        .setHTML(`
+                            <strong>Data Center</strong><br>
+                            Provider: ${props.provider || 'N/A'}<br>
+                            Region: ${props.region || 'N/A'}<br>
+                            Metro: ${props.metro || 'N/A'}<br>
+                            Type: ${props.type || 'N/A'}
+                        `)
+                        .addTo(map);
+                });
+
+                // Change cursor on hover for data centers
+                map.on('mouseenter', 'data-centers', () => { map.getCanvas().style.cursor = 'pointer'; });
+                map.on('mouseleave', 'data-centers', () => { map.getCanvas().style.cursor = ''; });
+
+                console.log('Loaded ' + features.length + ' data centers');
+            })
+            .catch(error => console.error('Error loading data centers:', error));
+
+        // Layer toggle controls
+        document.getElementById('toggle-holc').addEventListener('change', (e) => {
+            const visibility = e.target.checked ? 'visible' : 'none';
+            map.setLayoutProperty('holc-fill', 'visibility', visibility);
+            map.setLayoutProperty('holc-outline', 'visibility', visibility);
+        });
+
+        document.getElementById('toggle-svi').addEventListener('change', (e) => {
+            const visibility = e.target.checked ? 'visible' : 'none';
+            map.setLayoutProperty('svi-fill', 'visibility', visibility);
+        });
+
+        document.getElementById('toggle-datacenters').addEventListener('change', (e) => {
+            const visibility = e.target.checked ? 'visible' : 'none';
+            if (map.getLayer('data-centers')) {
+                map.setLayoutProperty('data-centers', 'visibility', visibility);
+            }
+        });
+    });
+</script>
+</body>
+</html>

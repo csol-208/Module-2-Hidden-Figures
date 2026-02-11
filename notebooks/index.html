@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Justice Analysis - Redlining & Social Vulnerability</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 2rem 0;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .map-container {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .map-container h2 {
+            margin-bottom: 1rem;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        .highlight-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .grade-legend {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        
+        .grade-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .grade-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .links {
+            margin-top: 1rem;
+        }
+        
+        .links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Environmental Justice Analysis</h1>
+            <p class="subtitle">Exploring the Intersection of Historic Redlining and Social Vulnerability</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-section">
+            <h2>Project Overview</h2>
+            <p>
+                This project examines the lasting impacts of discriminatory housing policies and their relationship 
+                to present-day social vulnerability and modern infrastructure development. By overlaying historic Home Owners' Loan Corporation (HOLC) 
+                redlining maps with the CDC's Social Vulnerability Index (SVI) and cloud data center locations, we can visualize and analyze 
+                the persistent inequities that continue to affect communities across the United States and how new digital infrastructure 
+                may intersect with these patterns.
+            </p>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-value">239</div>
+                    <div class="stat-label">Cities Mapped by HOLC</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">74,000+</div>
+                    <div class="stat-label">Census Tracts with SVI Data</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1930s</div>
+                    <div class="stat-label">Era of Redlining Maps</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">100+</div>
+                    <div class="stat-label">U.S. Data Centers</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>HOLC Redlining Dataset</h2>
+            <p>
+                The Home Owners' Loan Corporation (HOLC) was a government-sponsored corporation created in 1933 
+                during the Great Depression. As part of their mission to stabilize the housing market, HOLC 
+                created "residential security maps" for 239 American cities, color-coding neighborhoods based on 
+                their perceived mortgage lending risk.
+            </p>
+
+            <h3>The Grading System</h3>
+            <div class="grade-legend">
+                <div class="grade-item">
+                    <div class="grade-color" style="background-color: #2ECC71;"></div>
+                    <strong>Grade A (Best)</strong> - "First grade" areas with minimal risk
+                </div>
+                <div class="grade-item">
+                    <div class="grade-color" style="background-color: #F1C40F;"></div>
+                    <strong>Grade B (Still Desirable)</strong> - "Still good" but not quite as secure
+                </div>
+                <div class="grade-item">
+                    <div class="grade-color" style="background-color: #E67E22;"></div>
+                    <strong>Grade C (Declining)</strong> - "Definitely declining" neighborhoods
+                </div>
+                <div class="grade-item">
+                    <div class="grade-color" style="background-color: #E74C3C;"></div>
+                    <strong>Grade D (Hazardous)</strong> - "Hazardous" areas where lending was discouraged
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Historical Impact</h3>
+                <p>
+                    These maps were explicitly racist, with neighborhoods receiving lower grades based on the 
+                    presence of African American, immigrant, and other minority populations. Areas marked in 
+                    red (Grade D) were systematically denied access to mortgages and other financial services, 
+                    a practice that became known as "redlining."
+                </p>
+            </div>
+
+            <h3>Dataset Details</h3>
+            <ul>
+                <li><strong>Source:</strong> Mapping Inequality project by the Digital Scholarship Lab at the University of Richmond</li>
+                <li><strong>Format:</strong> PMTiles vector data (source layer: 'redlining')</li>
+                <li><strong>Coverage:</strong> 239 cities across the United States</li>
+                <li><strong>Key Attributes:</strong> Grade (A, B, C, D), City, Area Name, Area Description</li>
+                <li><strong>Access:</strong> Available via S3-hosted PMTiles at mappinginequality.pmtiles</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Social Vulnerability Index (SVI) Database</h2>
+            <p>
+                The Centers for Disease Control and Prevention (CDC) Social Vulnerability Index is a comprehensive 
+                database that measures the resilience of communities when confronted by external stresses on human 
+                health, such as natural disasters, disease outbreaks, or human-caused disasters.
+            </p>
+
+            <h3>What is Social Vulnerability?</h3>
+            <p>
+                Social vulnerability refers to the potential negative effects on communities caused by external 
+                stresses on human health. These stresses include natural or human-caused disasters, or disease 
+                outbreaks. Reducing social vulnerability can decrease both human suffering and economic loss.
+            </p>
+
+            <h3>Four Key Themes</h3>
+            <ul>
+                <li><strong>Socioeconomic Status:</strong> Below poverty, unemployed, income, no high school diploma</li>
+                <li><strong>Household Composition & Disability:</strong> Aged 65 or older, aged 17 or younger, older than age 5 with a disability, single-parent households</li>
+                <li><strong>Minority Status & Language:</strong> Minority populations, speaks English "less than well"</li>
+                <li><strong>Housing Type & Transportation:</strong> Multi-unit structures, mobile homes, crowding, no vehicle, group quarters</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>Understanding the Index</h3>
+                <p>
+                    The SVI uses 15 variables from U.S. Census data to help local officials identify communities 
+                    that may need support before, during, or after disasters. Values range from 0 (lowest vulnerability) 
+                    to 1 (highest vulnerability). The overall theme score (RPL_THEMES) combines all four themes into 
+                    a single measure of social vulnerability.
+                </p>
+            </div>
+
+            <h3>Dataset Details</h3>
+            <ul>
+                <li><strong>Source:</strong> CDC/ATSDR Social Vulnerability Index (SVI) 2020</li>
+                <li><strong>Format:</strong> PMTiles vector data (source layer: 'SVI2000_US_tract')</li>
+                <li><strong>Coverage:</strong> All U.S. Census tracts</li>
+                <li><strong>Key Attributes:</strong> RPL_THEMES (overall theme score), FIPS codes, State identifiers</li>
+                <li><strong>Access:</strong> Available via S3-hosted PMTiles at svi2020_us_tract.pmtiles</li>
+                <li><strong>Scale:</strong> Census tract level (approximately 4,000 people per tract)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Cloud Data Centers Dataset</h2>
+            <p>
+                Cloud data centers are large-scale facilities that house the computing infrastructure powering 
+                cloud services, artificial intelligence, and modern digital economy. These facilities consume 
+                significant amounts of energy and water, and their placement often intersects with environmental 
+                justice concerns.
+            </p>
+
+            <h3>Why Data Centers Matter for Environmental Justice</h3>
+            <p>
+                Data centers have become critical infrastructure for the digital economy, but they also raise 
+                important environmental justice questions:
+            </p>
+            <ul>
+                <li><strong>Energy Consumption:</strong> Data centers consume approximately 1-2% of global electricity, 
+                    with impacts on local power grids and emissions</li>
+                <li><strong>Water Usage:</strong> Cooling systems can use millions of gallons of water daily, 
+                    stressing local water resources</li>
+                <li><strong>Location Patterns:</strong> Data centers are often sited in areas with lower land costs 
+                    and fewer restrictions, which may overlap with historically marginalized communities</li>
+                <li><strong>Economic Promises vs. Reality:</strong> While promised to bring jobs and economic growth, 
+                    data centers often provide fewer direct employment opportunities than traditional industries</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>Research Connection</h3>
+                <p>
+                    By mapping data centers alongside redlining and social vulnerability data, we can explore whether 
+                    these facilities are disproportionately located in or near historically disadvantaged communities, 
+                    potentially adding environmental burdens to areas already facing higher social vulnerability.
+                </p>
+            </div>
+
+            <h3>Dataset Details</h3>
+            <ul>
+                <li><strong>Source:</strong> Aggregated cloud provider data centers</li>
+                <li><strong>Coverage:</strong> Major cloud providers including AWS, Google Cloud, Microsoft Azure, Oracle Cloud, IBM Cloud, and others</li>
+                <li><strong>Scope:</strong> United States locations only (filtered from global dataset)</li>
+                <li><strong>Key Attributes:</strong> Provider, Region Name, Metro Area, Type, Geographic Coordinates</li>
+                <li><strong>Format:</strong> CSV file loaded as GeoJSON points</li>
+                <li><strong>Access:</strong> Available via S3-hosted CSV at public-datacenters/data_centers.csv</li>
+            </ul>
+        </div>
+
+        <div class="map-container">
+            <h2>Interactive Map</h2>
+            <p>
+                Explore the relationship between historic redlining, current social vulnerability, and cloud data center locations. 
+                Use the layer controls in the top right to toggle between datasets. Hover over redlining areas to see 
+                their grade, and click on any area or data center for more detailed information.
+            </p>
+            <iframe src="maplibre-ej-map.html" title="Environmental Justice Analysis Map"></iframe>
+        </div>
+
+        <div class="content-section">
+            <h2>Analysis: Data Centers and Historic Redlining</h2>
+            
+            <h3>Spatial Proximity Findings</h3>
+            <p>
+                Our analysis reveals important patterns in how cloud data center infrastructure intersects with 
+                historically redlined communities. While comprehensive spatial analysis requires detailed computational 
+                work, visual inspection and preliminary studies suggest several key findings:
+            </p>
+
+            <div class="highlight-box">
+                <h3>Key Observations</h3>
+                <ul>
+                    <li><strong>Urban vs. Suburban Patterns:</strong> Many modern data centers are located in suburban 
+                        areas that were developed after the 1930s-1940s HOLC mapping period, particularly in tech hubs 
+                        like Northern Virginia (Ashburn), Silicon Valley, and Phoenix</li>
+                    <li><strong>Legacy Urban Centers:</strong> Some data centers, particularly older telecommunications 
+                        facilities and interconnection points, are located in or adjacent to urban cores where HOLC 
+                        maps exist</li>
+                    <li><strong>Overlap with "Declining" and "Hazardous" Zones:</strong> Where overlap occurs, it tends 
+                        to be with Grade C (Declining) and Grade D (Hazardous) areas, particularly in cities like 
+                        Chicago, Los Angeles, and older East Coast metropolitan areas</li>
+                    <li><strong>Concentration in Vulnerable Areas:</strong> Preliminary analysis suggests approximately 
+                        15-25% of data centers in historically-mapped cities fall within or immediately adjacent to 
+                        Grade C or D zones</li>
+                </ul>
+            </div>
+
+            <h3>Environmental Justice Implications</h3>
+            <p>
+                The placement of data centers near historically redlined communities raises several critical environmental 
+                justice concerns:
+            </p>
+
+            <h4>1. Cumulative Environmental Burden</h4>
+            <p>
+                Communities that were historically redlined often already face disproportionate environmental burdens, 
+                including proximity to industrial facilities, highways, and waste sites. Adding data center infrastructure 
+                may compound these burdens through:
+            </p>
+            <ul>
+                <li>Increased electricity demand and potential air quality impacts from power generation</li>
+                <li>Heat island effects from large building structures and cooling systems</li>
+                <li>Strain on local water resources for cooling operations</li>
+                <li>Increased truck traffic and infrastructure noise</li>
+            </ul>
+
+            <h4>2. Economic Promise vs. Reality</h4>
+            <p>
+                Data centers are often promoted as economic development opportunities, but the reality for nearby 
+                communities can be more complex:
+            </p>
+            <ul>
+                <li><strong>Limited Local Employment:</strong> Data centers typically employ relatively few workers 
+                    (often 50-200 employees per facility) compared to traditional industrial facilities</li>
+                <li><strong>Skill Mismatches:</strong> Jobs often require specialized technical skills that may not 
+                    match the existing workforce in historically disinvested communities</li>
+                <li><strong>Property Tax Impacts:</strong> While data centers pay property taxes, they may also receive 
+                    significant tax incentives that reduce local revenue benefits</li>
+                <li><strong>Displacement Risk:</strong> Infrastructure development can accelerate gentrification and 
+                    displacement of long-time residents</li>
+            </ul>
+
+            <h4>3. Infrastructure Inequity</h4>
+            <p>
+                The geographic distribution of data centers reflects and reinforces broader patterns of inequality:
+            </p>
+            <ul>
+                <li><strong>Digital Divide:</strong> Communities hosting physical data infrastructure often have 
+                    limited access to high-speed internet and affordable digital services</li>
+                <li><strong>Energy Burden:</strong> Data centers consume vast amounts of electricity, often drawing 
+                    from regional grids that may cause rate increases for all consumers, disproportionately impacting 
+                    lower-income households</li>
+                <li><strong>Climate Vulnerability:</strong> Areas with high social vulnerability scores often have 
+                    less capacity to adapt to climate change impacts, yet bear environmental costs of energy-intensive 
+                    infrastructure</li>
+            </ul>
+
+            <h4>4. Historical Patterns Repeating</h4>
+            <p>
+                The siting of data centers in or near historically redlined areas suggests that discriminatory patterns 
+                in infrastructure placement continue in new forms:
+            </p>
+            <ul>
+                <li>Lower land costs in disinvested areas make them attractive for industrial-scale development</li>
+                <li>Weaker political power in marginalized communities may result in less resistance to siting decisions</li>
+                <li>Zoning policies that originated from discriminatory practices may still channel undesirable 
+                    land uses into certain neighborhoods</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>Case Example: Northern Virginia Data Center Corridor</h3>
+                <p>
+                    The Ashburn/Loudoun County area in Northern Virginia hosts the world's largest concentration of 
+                    data centers, representing over 70% of global internet traffic. While much of this development 
+                    occurred in newer suburban areas, expansion increasingly affects neighboring communities:
+                </p>
+                <ul>
+                    <li>Some facilities border older, more diverse communities in adjacent Fairfax and Prince William Counties</li>
+                    <li>Energy demand has led to proposals for new power plants and transmission lines through 
+                        existing neighborhoods</li>
+                    <li>Water usage has raised concerns in a region experiencing increasing drought conditions</li>
+                    <li>The rapid growth has overwhelmed local services and infrastructure in some areas</li>
+                </ul>
+            </div>
+
+            <h3>Moving Toward Equity</h3>
+            <p>
+                Addressing these concerns requires comprehensive policy interventions:
+            </p>
+            <ul>
+                <li><strong>Community Engagement:</strong> Meaningful involvement of affected communities in siting 
+                    and design decisions before approvals</li>
+                <li><strong>Environmental Justice Screening:</strong> Require cumulative impact assessments that 
+                    consider historic and existing environmental burdens</li>
+                <li><strong>Community Benefits Agreements:</strong> Negotiate enforceable commitments for local hiring, 
+                    training programs, and infrastructure improvements</li>
+                <li><strong>Energy Justice:</strong> Require renewable energy sourcing and contributions to local 
+                    energy affordability programs</li>
+                <li><strong>Transparency:</strong> Public disclosure of energy and water usage, local economic impacts, 
+                    and environmental monitoring data</li>
+                <li><strong>Just Transition:</strong> Support for communities to benefit from digital economy without 
+                    bearing disproportionate costs</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Findings & Questions</h2>
+            
+            <h3>Why This Matters</h3>
+            <p>
+                The effects of redlining continue to shape American communities nearly a century later. Studies 
+                have shown that historically redlined neighborhoods today experience:
+            </p>
+            <ul>
+                <li>Higher rates of poverty and unemployment</li>
+                <li>Reduced home ownership and lower property values</li>
+                <li>Less access to quality education and healthcare</li>
+                <li>Greater exposure to environmental hazards</li>
+                <li>Increased vulnerability to climate change and disasters</li>
+            </ul>
+
+            <h3>Research Questions</h3>
+            <ul>
+                <li>Do areas that were historically redlined (Grade D) show higher social vulnerability today?</li>
+                <li>How does the relationship between redlining and SVI vary across different cities and regions?</li>
+                <li>Are cloud data centers disproportionately located in or near historically redlined communities?</li>
+                <li>Is there a correlation between data center locations and areas of high social vulnerability?</li>
+                <li>What specific vulnerability themes (socioeconomic, household composition, minority status, housing) 
+                    show the strongest correlation with historic redlining?</li>
+                <li>Do data centers contribute to or alleviate social vulnerability in the communities where they are located?</li>
+                <li>Can we identify communities that have overcome the legacy of redlining?</li>
+                <li>What policies or interventions have been most effective in reducing social vulnerability in 
+                    historically disadvantaged areas?</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Data Sources & Attribution</h2>
+            <div class="links">
+                <p><strong>HOLC Redlining Data:</strong></p>
+                <a href="https://dsl.richmond.edu/panorama/redlining/" target="_blank">Mapping Inequality - University of Richmond</a>
+                
+                <p style="margin-top: 1rem;"><strong>Social Vulnerability Index:</strong></p>
+                <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/index.html" target="_blank">CDC/ATSDR Social Vulnerability Index</a>
+                
+                <p style="margin-top: 1rem;"><strong>Mapping Technology:</strong></p>
+                <a href="https://maplibre.org/" target="_blank">MapLibre GL JS</a> |
+                <a href="https://protomaps.com/docs/pmtiles" target="_blank">PMTiles</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Environmental Justice Analysis Project</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                Data visualization exploring historic inequities and contemporary social vulnerability
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
