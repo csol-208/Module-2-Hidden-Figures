@@ -280,47 +280,13 @@
         map.on('mouseenter', 'svi-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
         map.on('mouseleave', 'svi-fill', () => { map.getCanvas().style.cursor = ''; });
 
-        // Load and add data centers from CSV
-        fetch('data/data_centers.csv')
-            .then(response => response.text())
-            .then(csv => {
-                const lines = csv.split('\n');
-                const headers = lines[0].split(',');
-                const features = [];
-
-                for (let i = 1; i < lines.length; i++) {
-                    const values = lines[i].split(',');
-                    if (values.length < 2) continue;
-                    
-                    const country = values[headers.indexOf('country')];
-                    if (country !== 'United States') continue;
-
-                    const lon = parseFloat(values[headers.indexOf('longitude')]);
-                    const lat = parseFloat(values[headers.indexOf('latitude')]);
-                    
-                    if (lon && lat) {
-                        features.push({
-                            type: 'Feature',
-                            geometry: {
-                                type: 'Point',
-                                coordinates: [lon, lat]
-                            },
-                            properties: {
-                                provider: values[headers.indexOf('provider')] || '',
-                                region: values[headers.indexOf('region_name')] || '',
-                                metro: values[headers.indexOf('metro')] || '',
-                                type: values[headers.indexOf('type')] || ''
-                            }
-                        });
-                    }
-                }
-
+        // Load and add data centers from GeoJSON
+        fetch('data/data_centers.geojson')
+            .then(response => response.json())
+            .then(geojson => {
                 map.addSource('data-centers', {
                     type: 'geojson',
-                    data: {
-                        type: 'FeatureCollection',
-                        features: features
-                    }
+                    data: geojson
                 });
 
                 map.addLayer({
@@ -344,7 +310,7 @@
                         .setHTML(`
                             <strong>Data Center</strong><br>
                             Provider: ${props.provider || 'N/A'}<br>
-                            Region: ${props.region || 'N/A'}<br>
+                            Region: ${props.region_name || 'N/A'}<br>
                             Metro: ${props.metro || 'N/A'}<br>
                             Type: ${props.type || 'N/A'}
                         `)
@@ -355,7 +321,7 @@
                 map.on('mouseenter', 'data-centers', () => { map.getCanvas().style.cursor = 'pointer'; });
                 map.on('mouseleave', 'data-centers', () => { map.getCanvas().style.cursor = ''; });
 
-                console.log('Loaded ' + features.length + ' data centers');
+                console.log('Loaded ' + geojson.features.length + ' data centers');
             })
             .catch(error => console.error('Error loading data centers:', error));
 

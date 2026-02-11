@@ -1,0 +1,5261 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391109,
+          33.748315
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "East US 3 (Atlanta)",
+        "type": "Cloud Region",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.742984,
+          30.267605
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Gov Texas",
+        "type": "Cloud Region",
+        "metro": "Austin",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.01269,
+          33.196499
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "South Carolina",
+        "type": "Cloud Region",
+        "metro": "Charleston",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.821544,
+          41.134815
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "West Central US (Cheyenne)",
+        "type": "Cloud Region",
+        "metro": "Cheyenne",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.895619,
+          41.917253
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "North Central US (Chicago)",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.895619,
+          41.917253
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD North",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.895619,
+          41.917253
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Midwest (Chicago)",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632409,
+          41.88415
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "North Central US (Chicago)",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632409,
+          41.88415
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD North",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632409,
+          41.88415
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Midwest (Chicago)",
+        "type": "Cloud Region",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.8087864,
+          40.0811745
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "AWS GovCloud (US-East)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.8087864,
+          40.0811745
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Ohio)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.8087864,
+          40.0811745
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Columbus",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.151054,
+          40.02981
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "AWS GovCloud (US-East)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.151054,
+          40.02981
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Ohio)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.151054,
+          40.02981
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Columbus",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.002984,
+          39.96196
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "AWS GovCloud (US-East)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.002984,
+          39.96196
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Ohio)",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.002984,
+          39.96196
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Columbus",
+        "type": "Cloud Region",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.795404,
+          32.778155
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Dallas",
+        "type": "Cloud Region",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.795404,
+          32.778155
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "Dallas",
+        "type": "Cloud Region",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.615659,
+          41.58979
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "Central US (Des Moines)",
+        "type": "Cloud Region",
+        "metro": "Des Moines",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.615659,
+          41.58979
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US DoD Central",
+        "type": "Cloud Region",
+        "metro": "Des Moines",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.615659,
+          41.58979
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Sec West Central",
+        "type": "Cloud Region",
+        "metro": "Des Moines",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.338855,
+          45.919796
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "AWS GovCloud (US-West)",
+        "type": "Cloud Region",
+        "metro": "Hermiston",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.338855,
+          45.919796
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US West (Oregon)",
+        "type": "Cloud Region",
+        "metro": "Hermiston",
+        "country": "United States",
+        "zones": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.700583,
+          45.839855
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "AWS GovCloud (US-West)",
+        "type": "Cloud Region",
+        "metro": "Hermiston",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.700583,
+          45.839855
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US West (Oregon)",
+        "type": "Cloud Region",
+        "metro": "Hermiston",
+        "country": "United States",
+        "zones": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.139974,
+          36.171915
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Las Vegas",
+        "type": "Cloud Region",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Los Angeles",
+        "type": "Cloud Region",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.853309,
+          47.237515
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "West US 2 (Quincy)",
+        "type": "Cloud Region",
+        "metro": "Moses Lake",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9167208,
+          41.2328248
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Iowa",
+        "type": "Cloud Region",
+        "metro": "Omaha",
+        "country": "United States",
+        "zones": "4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Phoenix",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Gov Arizona",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "West US 3 (Phoenix)",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD West",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Gov West (Phoenix)",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US West (Phoenix)",
+        "type": "Cloud Region",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.9898,
+          45.5229
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "West Coast (Seattle)",
+        "type": "Cloud Region",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.433654,
+          37.5407
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "East US (Richmond)",
+        "type": "Cloud Region",
+        "metro": "Richmond",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.433654,
+          37.5407
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "East US 2 (Richmond)",
+        "type": "Cloud Region",
+        "metro": "Richmond",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.433654,
+          37.5407
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US DoD East",
+        "type": "Cloud Region",
+        "metro": "Richmond",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.433654,
+          37.5407
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Sec East",
+        "type": "Cloud Region",
+        "metro": "Richmond",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.888229,
+          40.759505
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Salt Lake City",
+        "type": "Cloud Region",
+        "metro": "Salt Lake City",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.494624,
+          29.42449
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "South Central US (San Antonio)",
+        "type": "Cloud Region",
+        "metro": "San Antonio",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "US West 1 (Silicon Valley)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US West (Northern California)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Sec West",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "West US (San Francisco)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US West (San Jose)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.419644,
+          37.777125
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "Western U.S. (Silicon Valley)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "US West 1 (Silicon Valley)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US West (Northern California)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Sec West",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "West US (San Francisco)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US West (San Jose)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.885794,
+          37.338475
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "Western U.S. (Silicon Valley)",
+        "type": "Cloud Region",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.183434,
+          45.601555
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Oregon",
+        "type": "Cloud Region",
+        "metro": "The Dalles",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "US East 1 (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Northern Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Northern Virginia",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "Washington DC",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Gov Virginia ",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD East",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Gov East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "East Coast (Washington DC)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031959,
+          38.89037
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "Eastern U.S. (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "US East 1 (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Northern Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Northern Virginia",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "Washington DC",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Gov Virginia ",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD East",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Gov East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "East Coast (Washington DC)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "Eastern U.S. (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "US East 1 (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "US East (Northern Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "Northern Virginia",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "Washington DC",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "US Gov Virginia ",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US DoD East",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "US Gov East (Ashburn)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "East Coast (Washington DC)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.673791,
+          38.746455
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "Eastern U.S. (Virginia)",
+        "type": "Cloud Region",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": "2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391109,
+          33.748315
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391109,
+          33.748315
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391109,
+          33.748315
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.841532,
+          33.925182
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.841532,
+          33.925182
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.841532,
+          33.925182
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.056699,
+          42.358635
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Boston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.056699,
+          42.358635
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Boston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632409,
+          41.88415
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632409,
+          41.88415
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.987629,
+          32.462925
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.795404,
+          32.778155
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.795404,
+          32.778155
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.992259,
+          39.74001
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.992259,
+          39.74001
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.270229,
+          37.271875
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Fresno",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.857614,
+          21.30477
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Honolulu",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.369784,
+          29.76045
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Houston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.626824,
+          39.11338
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Kansas City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.139974,
+          36.171915
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.139974,
+          36.171915
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.245336,
+          34.053481
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.237419,
+          25.728985
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.237419,
+          25.728985
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.264929,
+          44.979035
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Minneapolis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.007124,
+          40.71455
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.007124,
+          40.71455
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.174184,
+          40.73197
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.174184,
+          40.73197
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9167208,
+          41.2328248
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Omaha",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.162369,
+          39.95227
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Philadelphia",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.075774,
+          33.44826
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.675629,
+          45.511795
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.888229,
+          40.759505
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Salt Lake City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.888229,
+          40.759505
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Salt Lake City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.160794,
+          37.44466
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329439,
+          47.60356
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329439,
+          47.60356
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.199514,
+          38.62774
+        ]
+      },
+      "properties": {
+        "provider": "OVH",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "St. Louis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.483151,
+          39.051631
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "Local Zone",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.39165115356445,
+          33.75561037354432
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Atlanta",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.698308,
+          30.206671
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Austin",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0595237,
+          42.3544921
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Boston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0595237,
+          42.3544921
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Boston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618531,
+          41.8541674
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Chicago",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.002043,
+          40.116569
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.002043,
+          40.116569
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Columbus",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81972026824951,
+          32.80098325000927
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Dallas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99559760093689,
+          39.74572161117953
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99559760093689,
+          39.74572161117953
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99559760093689,
+          39.74572161117953
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99559760093689,
+          39.74572161117953
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Denver",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -158.0885753,
+          21.3345794
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Honolulu",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.561292,
+          29.841738
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Houston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.561292,
+          29.841738
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Houston",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5810044,
+          39.1008326
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Kansas City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5810044,
+          39.1008326
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Kansas City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.21018863776774,
+          36.06003540497314
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.21018863776774,
+          36.06003540497314
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.21018863776774,
+          36.06003540497314
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.21018863776774,
+          36.06003540497314
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Las Vegas",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394123,
+          33.926077
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Los Angeles",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.193069234,
+          25.78262624
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.193069234,
+          25.78262624
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.193069234,
+          25.78262624
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.193069234,
+          25.78262624
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Miami",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2556691,
+          44.9723813
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Minneapolis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2556691,
+          44.9723813
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Minneapolis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2556691,
+          44.9723813
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Minneapolis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2556691,
+          44.9723813
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Minneapolis",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.820537,
+          47.254022
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Moses Lake",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.173364,
+          40.736763
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "New York",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.940331,
+          41.257446
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Omaha",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.161931,
+          39.959793
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Philadelphia",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.161931,
+          39.959793
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Philadelphia",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.009214,
+          33.415954
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Phoenix",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6807626,
+          45.5211838
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6807626,
+          45.5211838
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6807626,
+          45.5211838
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6807626,
+          45.5211838
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Portland",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.969729,
+          40.586198
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Salt Lake City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.969729,
+          40.586198
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Salt Lake City",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.688287,
+          29.466508
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Antonio",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.688287,
+          29.466508
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Antonio",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.970447,
+          37.376468
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "San Francisco",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.338515,
+          47.6143473
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Seattle",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Alibaba Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Amazon Web Services",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Google Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "IBM Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Microsoft Azure",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Oracle Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36459024433911,
+          38.95054655734388
+        ]
+      },
+      "properties": {
+        "provider": "Tencent Cloud",
+        "region_name": "",
+        "type": "On Ramp",
+        "metro": "Washington",
+        "country": "United States",
+        "zones": ""
+      }
+    }
+  ]
+}

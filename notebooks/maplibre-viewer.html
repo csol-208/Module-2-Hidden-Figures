@@ -211,45 +211,13 @@
                 console.error('✗ Error adding HOLC layer:', e);
             }
 
-            // Load and add data centers from local CSV
-            fetch('data/data_centers.csv')
-                .then(response => response.text())
-                .then(csv => {
-                    const lines = csv.split('\n');
-                    const headers = lines[0].split(',');
-                    const features = [];
-
-                    for (let i = 1; i < lines.length; i++) {
-                        const values = lines[i].split(',');
-                        if (values.length < 2) continue;
-                        
-                        const country = values[headers.indexOf('country')];
-                        if (country !== 'United States') continue;
-
-                        const lon = parseFloat(values[headers.indexOf('longitude')]);
-                        const lat = parseFloat(values[headers.indexOf('latitude')]);
-                        
-                        if (lon && lat) {
-                            features.push({
-                                type: 'Feature',
-                                geometry: {
-                                    type: 'Point',
-                                    coordinates: [lon, lat]
-                                },
-                                properties: {
-                                    provider: values[headers.indexOf('provider')] || '',
-                                    region: values[headers.indexOf('region_name')] || ''
-                                }
-                            });
-                        }
-                    }
-
+            // Load and add data centers from GeoJSON
+            fetch('data/data_centers.geojson')
+                .then(response => response.json())
+                .then(geojson => {
                     map.addSource('data-centers', {
                         type: 'geojson',
-                        data: {
-                            type: 'FeatureCollection',
-                            features: features
-                        }
+                        data: geojson
                     });
 
                     map.addLayer({
@@ -265,7 +233,7 @@
                         }
                     });
 
-                    console.log('✓ Loaded ' + features.length + ' data centers');
+                    console.log('✓ Loaded ' + geojson.features.length + ' data centers');
                 })
                 .catch(error => console.log('✗ Error loading data centers:', error));
 
